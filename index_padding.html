@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <div class="p-4 bg-gray-100">
+      이 박스는 모든 방향에 1rem 패딩이 있습니다.
+    </div>
+    <div class="px-6 py-2 bg-gray-200">
+      이 박스는 좌우에 1.5rem, 상하에 0.5rem 패딩이 있습니다.
+    </div>
+    <div class="m-4 bg-blue-100">
+      이 박스는 모든 방향에 1rem의 마진이 있습니다.
+    </div>
+    <div class="mt-6 mb-2 bg-blue-200">
+      이 박스는 상단에 1.5rem, 하단에 0.5rem의 마진이 있습니다.
+    </div>
+    <div class="flex space-x-4 bg-gray-300 p-4">
+      <div class="bg-white p-4">첫 번째 박스</div>
+      <div class="bg-white p-4">두 번째 박스</div>
+      <div class="bg-white p-4">세 번째 박스</div>
+    </div>
+    <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+      <img
+        class="w-full h-48 object-cover"
+        src="https://via.placeholder.com/400x200"
+        alt="Sample Image"
+      />
+      <div class="p-4">
+        <h2 class="text-2xl font-bold mb-2">카드 제목</h2>
+        <p class="text-gray-700">
+          이 카드는 Tailwind CSS의 간격 조정 유틸리티 클래스를 사용하여 간격을
+          설정했습니다.
+        </p>
+      </div>
+    </div>
+    <button
+      class="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:bg-blue-700"
+    >
+      Click Me
+    </button>
+    <button
+      class="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:bg-blue-700"
+    >
+      Click Me
+    </button>
+    <div
+      class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
+    >
+      <div class="shrink-0">
+        <img class="size-12" src="/img/logo.svg" alt="ChitChat Logo" />
+      </div>
+      <div>
+        <div class="text-xl font-medium text-black">ChitChat</div>
+        <p class="text-slate-500">You have a new message!</p>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('sidebarToggle').addEventListener('click', () => {
+        document
+          .getElementById('sidebar')
+          .classList.toggle('-translate-x-full');
+      });
+      document.getElementById('closeSidebar').addEventListener('click', () => {
+        document.getElementById('sidebar').classList.add('-translate-x-full');
+      });
+    </script>
+  </body>
+</html>

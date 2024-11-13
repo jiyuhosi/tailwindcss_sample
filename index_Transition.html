@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <body
+      class="min-h-screen flex flex-col gap-y-4 items-center justify-center"
+    >
+      <!-- Transition 미적용 -->
+      <button
+        class="text-5xl bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded"
+      >
+        Hover me
+      </button>
+      <!-- Transition 적용 -->
+      <button
+        class="text-5xl bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition duration-500"
+      >
+        Hover me
+      </button>
+      <button
+        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition-colors duration-500"
+      >
+        Hover me
+      </button>
+      <button
+        class="text-5xl bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition-colors duration-500"
+      >
+        Hover me
+      </button>
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-150"
+      >
+        Button A (150ms)
+      </button>
+
+      <button
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300"
+      >
+        Button B (300ms)
+      </button>
+
+      <button
+        class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded transition-colors duration-500"
+      >
+        Button C (500ms)
+      </button>
+      <button
+        class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 ease-linear"
+      >
+        Button A (linear)
+      </button>
+
+      <button
+        class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 ease-in"
+      >
+        Button B (ease-in)
+      </button>
+
+      <button
+        class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 ease-out"
+      >
+        Button C (ease-out)
+      </button>
+      <button
+        class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 delay-150"
+      >
+        Button A (150ms delay)
+      </button>
+
+      <button
+        class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 delay-300"
+      >
+        Button B (300ms delay)
+      </button>
+
+      <button
+        class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 delay-500"
+      >
+        Button C (500ms delay)
+      </button>
+      <div
+        class="max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden transition transform hover:scale-105 hover:shadow-lg duration-300 ease-in-out"
+      >
+        <img
+          class="w-full h-48 object-cover"
+          src="https://via.placeholder.com/300"
+          alt="Sample Image"
+        />
+        <div class="p-4">
+          <h2 class="text-lg font-bold">Interactive Card</h2>
+          <p class="mt-2 text-gray-600">
+            This card grows and adds a shadow when you hover over it.
+          </p>
+        </div>
+      </div>
+    </body>
+    <script>
+      document.getElementById('sidebarToggle').addEventListener('click', () => {
+        document
+          .getElementById('sidebar')
+          .classList.toggle('-translate-x-full');
+      });
+      document.getElementById('closeSidebar').addEventListener('click', () => {
+        document.getElementById('sidebar').classList.add('-translate-x-full');
+      });
+    </script>
+  </body>
+</html>
